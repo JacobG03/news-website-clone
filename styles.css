@@ -1,0 +1,141 @@
+:root {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    --speed: 300ms;
+    --text-highlited: #ff3b30;
+}
+
+.show-flex {
+    display: flex !important;
+}
+
+.hide-flex {
+    display: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left:  10px;
+}
+
+.header {
+    width: 100vw;
+    height: 230px;
+}
+
+.header-top {
+    width: 100vw;
+    height: 35px;
+    background-color: black;
+}
+
+.header-top-content {
+    height: 35px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-top-content a {
+    color: #ddd;
+    padding-inline: 10px;
+    font-size: 0.8rem;
+    transition: var(--speed);
+}
+
+.header-top-content a:first-child{
+    padding-left: 0px;
+}
+
+.header-top-content a:hover {
+    color: var(--text-highlited);
+}
+
+.header-logo {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom {
+    width: 100vw;
+    height: 45px;
+    background-color: #f2f2f2;
+    border-top: 1px solid#eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.header-bottom-content {
+    display: flex;
+    width: 100%;
+    height: 45px;
+}
+
+.header-bottom-content-default {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom-content-default a{
+    font-size: 0.9rem;
+    padding-inline: 20px;
+    color: #111111;
+    transition: var(--speed);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom-content-default a:first-child{
+    padding-left: 0px;
+}
+
+.header-bottom-content-default a:hover {
+    color: var(--text-highlited);
+}
+
+.header-bottom-content-search {
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+}
+
+.header-bottom-content-search input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 45px;
+    transition: var(--speed);
+    cursor: pointer;
+}
+
+#search-icon:hover {
+    color: var(--text-highlited);
+}
