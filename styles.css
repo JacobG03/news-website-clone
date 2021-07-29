@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
     --speed: 300ms;
     --text-highlited: #ff3b30;
+    --light: #f2f2f2;
 }
 
 a {
@@ -237,4 +238,148 @@ body {
 #topic3-info,
 #topic4-info {
     margin-top: 35px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.main-content {
+    width: 100%;
+    height: fit-content;
+}
+
+.side-content {
+    width: 100%;
+    height: fit-content;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 90%;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1.5rem;
+    width: 100%;
+    height: fit-content;
+    padding-top: 2rem;
+}
+
+.content-title {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 3px solid var(--light);
+}
+
+.title-box {
+    width: 90%;
+}
+
+.content-title h3 {
+    height: 2.2rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border-bottom: 3px solid var(--text-highlited);
+}
+
+.content-title a {
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    color: #888888;
+    font-size: 0.8rem;
+    margin-left: 160px;
+}
+
+
+.content-left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: fit-content;
+}
+
+.content-left #img-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.content-left a > span {
+    position: absolute;
+    font-size: 0.6rem;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 20px;
+    z-index: 5;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.content-left a img{
+    width: 100%;
+}
+
+.content-left #post-title {
+    color: #000;
+    font-size: 1.2rem;
+    transition: var(--speed);
+}
+
+.content-left #post-title:hover {
+    color: var(--text-highlited);
+}
+
+.content-left > span {
+    height: fit-content;
+    width: fit-content;
+    color: #AAAAAA;
+    padding-top: 5px;
+    font-size: 0.8rem;
+    padding-right: 5px;
+}
+
+.content-right {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: fit-content;
+}
+
+.content-right-item {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+}
+
+.content-right-item img{
+    width: 100%;
+}
+
+.post-info p > a {
+    display: block;
+    color: #000;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+.post-info p > span {
+    display: block;
+    color: #AAAAAA;
+    font-size: 0.8rem;
 }
